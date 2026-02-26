@@ -1,0 +1,36 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=librian
+      - DB_USER=librian_user
+      - DB_PASSWORD=secret
+    depends_on:
+      - db
+    networks:
+      - librian-network
+
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=librian
+      - POSTGRES_USER=librian_user
+      - POSTGRES_PASSWORD=secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - librian-network
+
+volumes:
+  db_data:
+
+networks:
+  librian-network:
+    driver: bridge

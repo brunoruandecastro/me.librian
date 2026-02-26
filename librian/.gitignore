@@ -1,0 +1,40 @@
+## OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+
+## Maven / Java
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+## Compiled outputs
+bin/
+out/
+
+## Logs / Dumps
+*.log
+*.log.*
+spring.log
+hs_err_pid*
+replay_pid*
+heapdump*.hprof
+
+## Env files (keep examples)
+.env
+.env.*
+!.env.example
+
+## Misc
+*.pid
