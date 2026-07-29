@@ -6,5 +6,6 @@ public enum BookStatus {
     READ,
     DONATING,
     SELLING,
-    PAUSED_READING
+    PAUSED_READING,
+    WISHLIST
 }

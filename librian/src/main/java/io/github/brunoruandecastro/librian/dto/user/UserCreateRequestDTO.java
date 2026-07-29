@@ -1,13 +1,14 @@
 package io.github.brunoruandecastro.librian.dto.user;
 
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class UserCreateRequestDTO {
 
     public UserCreateRequestDTO(String email, String password){

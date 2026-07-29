@@ -1,0 +1,3 @@
+# Copie para src/main/resources/application-local.properties (gitignored)
+# Google Books: Credentials → Create credentials → API key (começa com AIza...)
+librian.google-books.api-key=AIzaSy...sua-api-key

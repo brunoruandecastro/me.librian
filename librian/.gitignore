@@ -36,5 +36,8 @@ heapdump*.hprof
 .env.*
 !.env.example
 
+## Local secrets (mail credentials, etc.)
+src/main/resources/application-local.properties
+
 ## Misc
 *.pid

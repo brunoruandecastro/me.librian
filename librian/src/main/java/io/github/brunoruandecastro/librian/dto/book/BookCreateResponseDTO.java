@@ -1,10 +1,11 @@
 package io.github.brunoruandecastro.librian.dto.book;
 
-// import io.github.brunoruandecastro.librian.dto.user.UserCreateResponseDTO;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.UUID;
+
 import lombok.Getter;
 import lombok.Setter;
-import java.util.UUID;
-import java.util.Date;
 
 @Getter
 @Setter
@@ -18,7 +19,13 @@ public class BookCreateResponseDTO {
     private String description;
     private String coverUrl;
     private String status;
-    // private UserCreateResponseDTO user;
+    private Integer rating;
+    private Integer pages;
+    private String notes;
+    private String genre;
+    private String language;
+    private LocalDate readDate;
+    private UUID userId;
     private Date createdAt;
     private Date updatedAt;
 }
